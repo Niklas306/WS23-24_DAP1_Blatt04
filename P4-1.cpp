@@ -5,17 +5,20 @@
 // Wenn kein geeigneter Wert vorhanden ist,
 // gibt die Funktion cap+1 zurück.
 int capped_max(int array[], int size, int cap) {
-  int rückgabe = 0;
+  int output = 0;
+  bool foundSomething = false;
 
   for (int i = 0; i < size; i++) {
-    if (array[i] <= cap && array[i] > rückgabe) {
-      rückgabe = array[i];
-    } else {
-      rückgabe = cap + 1;
+    if (array[i] <= cap && array[i] > output) {
+      output = array[i];
+      foundSomething = true;
     }
   }
 
-  return rückgabe;
+  if (foundSomething == false) {
+    output = cap + 1;
+  }
+  return output;
 }
 
 int main() {
