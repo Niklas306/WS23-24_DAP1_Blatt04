@@ -1,0 +1,22 @@
+Achtung: Diese Aufgabe besteht aus den zwei Teilaufgaben a und b. Anbei finden Sie ein Codegerüst für die Funktionen (P4-1.cpp)
+und Listen mit Beispielwerten. Laden Sie die .cpp-Datei herunter, und implementieren Sie beide Teilaufgaben direkt in dieser.
+Unabhängig davon, ob Sie nur eine oder beide Teilaufgaben bearbeiten, besteht Ihre Abgabe aus einer einzigen Datei, die Sie hochladen.
+
+a)  Ergänzen Sie die main-Funktion im Codegerüst, sodass die Datei mit dem eingegebenen Dateinamen in ein Array eingelesen wird.
+    Dabei gibt der Wert in der ersten Zeile der Datei an, wie viele Werte eingelesen werden sollen.
+    Die einzulesenden Werte befinden sich in den nachfolgenden Zeilen.
+
+Verändern sie die main-Funktion nur in dem markierten Abschnitt! Achten Sie darauf, die Anzahl der eingelesenen Werte in der
+Variable int size und die Werte selbst im Array int* arr zu speichern. Das Programm darf keine zusätzlichen/anderen Ausgaben
+erzeugen oder zusätzliche/andere Eingaben entgegennehmen.
+
+b)  Implementieren Sie eine Funktion int capped_max(int array[], int size, int cap), welche den größten Wert des übergebenen Arrays
+    zurückgibt, der den Wert cap nicht übersteigt. Ist ein solcher Wert nicht vorhanden, so geben Sie cap+1 zurück.
+
+Sie dürfen abgesehen von <cstdio> keine weiteren Bibliotheken verwenden.
+Stellen Sie sicher, dass Ihr Programm die o.g. Signaturen der Funktionen verwendet.
+Sie dürfen die im Array gespeicherten Werte nicht verändern.
+Sie müssen nicht überprüfen, ob die übergebenen Parameter "sinnvoll" sind (z.B. negative Werte von size abfangen).
+
+Implementieren Sie eine Funktion int count_character_in_string(char const string[], char search_character), welche zurückgibt,
+wie oft das Zeichen search_character in der Zeichenkette string vorkommt.
